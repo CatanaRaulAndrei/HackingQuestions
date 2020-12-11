@@ -67,8 +67,8 @@ h5 {
   font-family: var(--ff-primary);
 }
 
-ul{
-  list-style-type: number;
+ul h5 li {
+  list-style-type: none;
 }
 
 .ul-s h5 {
