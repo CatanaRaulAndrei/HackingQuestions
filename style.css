@@ -67,7 +67,7 @@ h5 {
   font-family: var(--ff-primary);
 }
 
-ul li {
+ul > li {
   list-style-type: number;
 }
 .ul-s h5 {
