@@ -67,9 +67,10 @@ h5 {
   font-family: var(--ff-primary);
 }
 
-ul > li {
+ul{
   list-style-type: number;
 }
+
 .ul-s h5 {
   line-height: 2;
 }
