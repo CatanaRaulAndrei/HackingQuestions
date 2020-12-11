@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
+@import url("http://fonts.cdnfonts.com/css/baloo-chettan");
+
+:root {
+  --ff-primary: "Work Sans", sans-serif;
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --spacing: 0.25rem;
+  --clr-black: #222;
+  --clr-white: #fff;
+  --clr-gold: #c59d5f;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s linear;
+  --radius: 0.5rem;
+  --fixed-width: 620px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+body h1 {
+  margin-bottom: 100px;
+}
+
+.container {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  padding-top: 150px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 90vw;
+  margin: auto;
+  max-width: var(--fixed-width);
+}
+
+.container:hover {
+  box-shadow: var(--light-shadow);
+}
+.container h1 {
+  margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+
+ul li {
+  list-style-type: number;
+}
+.ul-s h5 {
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-black);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+h5 {
+  font-size: 0.756rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: var(--clr-black);
+  transition: var(--transition);
+}
+
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--fixed-width);
+}
+
+.title {
+  margin-top: 15vh;
+  margin-bottom: 4rem;
+}
+
+.title h2 {
+  color: var(--clr-gold);
+  font-size: 3rem;
+  font-family: "Baloo Chettan", sans-serif;
+  text-align: center;
+}
+
+.question {
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: var(--spacing);
+  color: var(--clr-grey-1);
+}
+
+.question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.question-text p {
+  margin-bottom: 0;
+}
+
+.question-text {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
+}
